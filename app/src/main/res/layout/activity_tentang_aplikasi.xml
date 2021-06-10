@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TentangAplikasiActivity">
+
+    <ScrollView
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Injektor"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:textSize="40dp" />
+            <TextView
+                android:justificationMode="inter_word"
+                android:textSize="20dp"
+                android:text="Secara sederhana, fungsi injektor menyemprotkan bahan bakar ke dalam ruang bakar dengan mengubah partikel menjadi kabut. Lubang kecil pada injektor tersebut yang mengubah bahan bakar menjadi kabut. Dengan proses pengkabutan bensin menjadi mudah terbakar di ruang bakar. Apakah injektor menyedot bensin dengan sendirinya? Tidak, bensin mengalir ke injektor akibat adanya tekanan dari fuel pump. Jadi tanpa fuel pump injektor tidak akan berfungsi dengan maksimal. Agar injektor tidak cepat rusak, dianjurkan jangan sampai mogok karena kehabisan bensin"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

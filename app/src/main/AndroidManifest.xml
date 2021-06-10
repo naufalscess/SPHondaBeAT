@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sphondabeat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SPHondaBeAT"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".HasilDiagnosaActivity"
+            android:parentActivityName=".DiagnosaKerusakanActivity"></activity>
+
+        <activity
+            android:name=".admin.AturanViewActivity"
+            android:parentActivityName=".admin.AturanActivity" />
+        <activity
+            android:name=".admin.AturanEditActivity"
+            android:parentActivityName=".admin.AturanViewActivity" />
+        <activity
+            android:name=".admin.KerusakanEditActivity"
+            android:parentActivityName=".admin.KerusakanActivity" />
+        <activity
+            android:name=".admin.KerusakanTambahActivity"
+            android:parentActivityName=".admin.KerusakanActivity" />
+        <activity
+            android:name=".admin.KendalaTambahActivity"
+            android:parentActivityName=".admin.KendalaActivity" />
+        <activity
+            android:name=".admin.KendalaEditActivity"
+            android:parentActivityName=".admin.KendalaActivity" />
+        <activity
+            android:name=".admin.AturanActivity"
+            android:parentActivityName=".AdminActivity" />
+        <activity
+            android:name=".admin.KerusakanActivity"
+            android:parentActivityName=".AdminActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity
+            android:name=".KerusakanDetailActivity"
+            android:parentActivityName=".KerusakanActivity" />
+        <activity
+            android:name=".KerusakanActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RiwayatActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DiagnosaKerusakanActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".DaftarActivity" />
+        <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
