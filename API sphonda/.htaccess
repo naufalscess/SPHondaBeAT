@@ -1,0 +1,2 @@
+SetEnvIf Host localhost$ PHP_ENV=development
+SetEnvIf Host app.irmanfrdev.com$ PHP_ENV=production
