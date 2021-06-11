@@ -43,6 +43,9 @@
             android:name=".admin.AturanActivity"
             android:parentActivityName=".AdminActivity" />
         <activity
+            android:name=".admin.KendalaActivity"
+            android:parentActivityName=".AdminActivity" />
+        <activity
             android:name=".admin.KerusakanActivity"
             android:parentActivityName=".AdminActivity" />
         <activity android:name=".AdminActivity" />

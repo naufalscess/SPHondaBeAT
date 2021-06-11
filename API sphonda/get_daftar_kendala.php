@@ -5,7 +5,7 @@ $inputJSON = file_get_contents('php://input');
 $input = json_decode($inputJSON, TRUE);
 $response = array();
 
-$q = mysqli_query($con, "SELECT id_kendala,nama_kendala, FROM kendala ORDER BY kode_kendala");
+$q = mysqli_query($con, "SELECT id_kendala,nama_kendala FROM kendala ORDER BY kode_kendala");
 
 $response["kendala"] = array();
 while ($r = mysqli_fetch_array($q)) {
