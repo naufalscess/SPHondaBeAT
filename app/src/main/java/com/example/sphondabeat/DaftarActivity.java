@@ -18,7 +18,7 @@ import org.json.JSONObject;
 public class DaftarActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
-    public static final String url = "http://192.168.233.132/sphonda/sp_honda/daftar.php";
+    public static final String url = "https://sphondabeat.retechnology.id/sphonda/sp_honda/daftar.php";
     private EditText et_nama_lengkap;
     private EditText et_username;
     private EditText et_password;
@@ -40,6 +40,7 @@ public class DaftarActivity extends AppCompatActivity {
         Button daftar = findViewById(R.id.btn_daftar);
 
         daftar.setOnClickListener(v -> {
+            daftar.setBackgroundColor(getResources().getColor(R.color.light_grey));
             nama_lengkap = et_nama_lengkap.getText().toString().trim();
             username = et_username.getText().toString().toLowerCase().trim();
             password = et_password.getText().toString().trim();
@@ -49,6 +50,7 @@ public class DaftarActivity extends AppCompatActivity {
         });
 
         login.setOnClickListener(view -> {
+            login.setBackgroundColor(getResources().getColor(R.color.light_grey));
             Intent i = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(i);
             finish();

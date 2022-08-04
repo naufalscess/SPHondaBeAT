@@ -27,7 +27,7 @@ import java.util.HashMap;
 public class DiagnosaKerusakanActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
-    private static final String url = "http://192.168.233.132/sphonda/sp_honda/get_daftar_kendala.php";
+    private static final String url = "https://sphondabeat.retechnology.id/sphonda/sp_honda/get_daftar_kendala.php";
     private ArrayList<HashMap<String, String>> list;
     private ArrayList<String> hasil;
     private TextView text_pertanyaan;
@@ -50,12 +50,14 @@ public class DiagnosaKerusakanActivity extends AppCompatActivity {
         Button btn_tidak = findViewById(R.id.btn_tidak);
 
         btn_ya.setOnClickListener(view -> {
+            btn_ya.setBackgroundColor(getResources().getColor(R.color.light_grey));
             HashMap<String, String> item = list.get(counter);
             hasil.add(item.get("id_kendala"));
             showPertanyaan(++counter);
         });
 
         btn_tidak.setOnClickListener(view -> {
+            btn_tidak.setBackgroundColor(getResources().getColor(R.color.light_grey));
             showPertanyaan(++counter);
         });
 
@@ -93,7 +95,7 @@ public class DiagnosaKerusakanActivity extends AppCompatActivity {
     }
 
     private void getData() {
-      //  displayLoader();
+      displayLoader();
         JsonObjectRequest jsArrayRequest = new JsonObjectRequest
                 (Request.Method.POST, url, null, response -> {
                     pDialog.dismiss();

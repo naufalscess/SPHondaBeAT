@@ -21,7 +21,7 @@ import org.json.JSONObject;
 public class KerusakanTambahActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
-    private static final String url = "http://192.168.233.132/sphonda/sp_honda/tambah_kerusakan.php";
+    private static final String url = "https://sphondabeat.retechnology.id/sphonda/sp_honda/tambah_kerusakan.php";
     private EditText et_kode_kerusakan;
     private EditText et_nama_kerusakan;
     private EditText et_deskripsi;
@@ -45,6 +45,7 @@ public class KerusakanTambahActivity extends AppCompatActivity {
         Button btn_simpan = findViewById(R.id.btn_simpan);
 
         btn_simpan.setOnClickListener(view -> {
+            btn_simpan.setBackgroundColor(getResources().getColor(R.color.light_grey));
             kode_kerusakan = et_kode_kerusakan.getText().toString().trim();
             nama_kerusakan = et_nama_kerusakan.getText().toString().trim();
             deskripsi = et_deskripsi.getText().toString();

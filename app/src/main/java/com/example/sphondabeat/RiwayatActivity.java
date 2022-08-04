@@ -29,8 +29,8 @@ import java.util.HashMap;
 public class RiwayatActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
-    private static final String url = "http://192.168.233.132/sphonda/sp_honda/get_daftar_riwayat.php";
-    private static final String url_delete = "http://192.168.233.132/sphonda/sp_honda/hapus_daftar_riwayat.php";
+    private static final String url = "https://sphondabeat.retechnology.id/sphonda/sp_honda/get_daftar_riwayat.php";
+    private static final String url_delete = "https://sphondabeat.retechnology.id/sphonda/sp_honda/hapus_daftar_riwayat.php";
     private ListView lv;
     private TextView tv_tidak_ada;
     private SimpleAdapter adapter;

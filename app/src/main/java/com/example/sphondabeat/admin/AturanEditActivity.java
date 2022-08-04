@@ -30,8 +30,8 @@ import java.util.ArrayList;
 public class AturanEditActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
-    private static final String url = "http://192.168.233.132/sphonda/sp_honda/get_daftar_kendala.php";
-    private static final String url_update = "http://192.168.233.132/sphonda/sp_honda/update_aturan.php";
+    private static final String url = "https://sphondabeat.retechnology.id/sphonda/sp_honda/get_daftar_kendala.php";
+    private static final String url_update = "https://sphondabeat.retechnology.id/sphonda/sp_honda/update_aturan.php";
     private MyCustomAdapter dataAdapter = null;
     private ArrayList<Kendala> kendalaList = new ArrayList<Kendala>();
     private Kendala kendala;
@@ -58,6 +58,7 @@ public class AturanEditActivity extends AppCompatActivity {
 
         Button btn_simpan = findViewById(R.id.btn_simpan);
         btn_simpan.setOnClickListener(v -> {
+            btn_simpan.setBackgroundColor(getResources().getColor(R.color.light_grey));
             responseText = new StringBuffer();
             if (!kendalaList.isEmpty()) {
                 ArrayList<Kendala> kendalaList2 = dataAdapter.kendalaList;

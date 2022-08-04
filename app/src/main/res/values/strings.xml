@@ -38,4 +38,7 @@
     <string name="hapus_gejala">Hapus Gejala</string>
     <string name="hapus_kendala">Hapus Kendala</string>
     <string name="forward_chaining">Forward Chaining</string>
+    <string name="nama_kendala">Nama Kendala :</string>
+    <string name="kode_kendala">Kode Kendala :</string>
+    <string name="cara_memperbaiki_kerusakan">Cara Memperbaiki Kerusakan</string>
 </resources>

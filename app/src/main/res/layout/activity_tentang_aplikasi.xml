@@ -5,11 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_red"
     tools:context=".TentangAplikasiActivity">
 
     <ScrollView
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="60dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/scroll">
@@ -21,14 +20,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Injektor"
-                android:layout_gravity="left"
-                android:layout_marginLeft="15dp"
-                android:textSize="40dp" />
+                android:text="@string/tentang_aplikasi"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
             <TextView
                 android:justificationMode="inter_word"
                 android:textSize="20dp"
-                android:text="Secara sederhana, fungsi injektor menyemprotkan bahan bakar ke dalam ruang bakar dengan mengubah partikel menjadi kabut. Lubang kecil pada injektor tersebut yang mengubah bahan bakar menjadi kabut. Dengan proses pengkabutan bensin menjadi mudah terbakar di ruang bakar. Apakah injektor menyedot bensin dengan sendirinya? Tidak, bensin mengalir ke injektor akibat adanya tekanan dari fuel pump. Jadi tanpa fuel pump injektor tidak akan berfungsi dengan maksimal. Agar injektor tidak cepat rusak, dianjurkan jangan sampai mogok karena kehabisan bensin"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:text="Aplikasi Sistem Pakar Honda BeAT ini merupakan sebuah aplikasi yang diciptakan untuk membantu pengguna motor Honda BeAT mendeteksi kerusakan pada motornya dengan memasukan kendala yang dialami oleh pengguna."
                 android:layout_width="290dp"
                 android:layout_height="wrap_content" />
         </LinearLayout>

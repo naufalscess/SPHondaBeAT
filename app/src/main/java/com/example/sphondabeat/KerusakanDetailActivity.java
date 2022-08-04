@@ -17,7 +17,7 @@ import org.json.JSONObject;
 public class KerusakanDetailActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
-    private static final String url = "http://192.168.233.132/sphonda/sp_honda/get_kerusakan.php";
+    private static final String url = "https://sphondabeat.retechnology.id/sphonda/sp_honda/get_kerusakan.php";
     private TextView tv_nama_kerusakan;
     private TextView tv_deskripsi;
     private TextView tv_solusi;

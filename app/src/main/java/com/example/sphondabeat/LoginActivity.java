@@ -18,7 +18,7 @@ import org.json.JSONObject;
 public class LoginActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
-    public static final String login_url = "http://192.168.233.132/sphonda/sp_honda/login.php";
+    public static final String login_url = "https://sphondabeat.retechnology.id/sphonda/sp_honda/login.php";
     private EditText et_username;
     private EditText et_password;
     private String username;
@@ -40,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         Button daftar = findViewById(R.id.btn_daftar);
 
         login.setOnClickListener(v -> {
+            login.setBackgroundColor(getResources().getColor(R.color.light_grey));
             username = et_username.getText().toString().toLowerCase().trim();
             password = et_password.getText().toString().trim();
             if (validateInputs()) {
@@ -48,6 +49,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         daftar.setOnClickListener(view -> {
+            daftar.setBackgroundColor(getResources().getColor(R.color.light_grey));
             Intent i = new Intent(getApplicationContext(), DaftarActivity.class);
             startActivity(i);
             finish();
@@ -77,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void login() {
-        //displayLoader();
+        displayLoader();
         JSONObject request = new JSONObject();
         try {
             request.put("username", username);

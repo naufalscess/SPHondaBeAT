@@ -21,7 +21,7 @@ import org.json.JSONObject;
 public class AturanViewActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
-    private static final String url = "http://192.168.233.132/sphonda/sp_honda/get_aturan.php";
+    private static final String url = "https://sphondabeat.retechnology.id/sphonda/sp_honda/get_aturan.php";
     private TextView tv_nama_kerusakan;
     private TextView tv_daftar_kendala;
     private String id_kerusakan;
@@ -44,6 +44,7 @@ public class AturanViewActivity extends AppCompatActivity {
         Button btn_atur_ulang = findViewById(R.id.btn_atur_ulang);
 
         btn_atur_ulang.setOnClickListener(view -> {
+            btn_atur_ulang.setBackgroundColor(getResources().getColor(R.color.light_grey));
             Intent intent = new Intent(AturanViewActivity.this, AturanEditActivity.class);
             intent.putExtra("id_kerusakan", id_kerusakan);
             intent.putExtra("nama_kerusakan", nama_kerusakan);

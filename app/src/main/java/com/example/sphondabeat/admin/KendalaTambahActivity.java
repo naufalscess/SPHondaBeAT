@@ -21,7 +21,7 @@ import org.json.JSONObject;
 public class KendalaTambahActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
-    private static final String url = "http://192.168.233.132/sphonda/sp_honda/tambah_kendala.php";
+    private static final String url = "https://sphondabeat.retechnology.id/sphonda/sp_honda/tambah_kendala.php";
     private EditText et_kode_kendala;
     private EditText et_nama_kendala;
     private String kode_kendala;
@@ -39,6 +39,7 @@ public class KendalaTambahActivity extends AppCompatActivity {
         Button btn_simpan = findViewById(R.id.btn_simpan);
 
         btn_simpan.setOnClickListener(view -> {
+            btn_simpan.setBackgroundColor(getResources().getColor(R.color.light_grey));
             kode_kendala = et_kode_kendala.getText().toString().trim();
             nama_kendala = et_nama_kendala.getText().toString().trim();
             if (validateInputs()) {

@@ -56,6 +56,12 @@
             android:name=".KerusakanActivity"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".DaftarKomponenMotorActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TentangAplikasiActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".RiwayatActivity"
             android:parentActivityName=".MainActivity" />
         <activity
@@ -63,16 +69,20 @@
             android:parentActivityName=".MainActivity" />
 
         <activity android:name=".DaftarActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"/>
 
-        </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"/>
+
+
+
     </application>
 
 </manifest>

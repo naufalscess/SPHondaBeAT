@@ -30,16 +30,19 @@ public class AdminActivity extends AppCompatActivity {
         Button btn_logout = findViewById(R.id.btn_logout);
 
         btn_kendala.setOnClickListener(view -> {
+            btn_kendala.setBackgroundColor(getResources().getColor(R.color.light_grey));
             Intent intent = new Intent(AdminActivity.this, KendalaActivity.class);
             startActivity(intent);
         });
 
         btn_kerusakan.setOnClickListener(view -> {
+            btn_kerusakan.setBackgroundColor(getResources().getColor(R.color.light_grey));
             Intent intent = new Intent(AdminActivity.this, KerusakanActivity.class);
             startActivity(intent);
         });
 
         btn_aturan.setOnClickListener(view -> {
+            btn_aturan.setBackgroundColor(getResources().getColor(R.color.light_grey));
             Intent intent = new Intent(AdminActivity.this, AturanActivity.class);
             startActivity(intent);
         });
@@ -58,6 +61,7 @@ public class AdminActivity extends AppCompatActivity {
                     }
                 })
                 .setNegativeButton("Tidak", null).show());
+        btn_logout.setBackgroundColor(getResources().getColor(R.color.light_grey));
 
     }
 }

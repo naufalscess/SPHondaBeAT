@@ -30,7 +30,7 @@ import java.util.HashMap;
 public class AturanActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
-    private static final String url = "http://192.168.233.132/sphonda/sp_honda/get_daftar_aturan.php";
+    private static final String url = "https://sphondabeat.retechnology.id/sphonda/sp_honda/get_daftar_aturan.php";
     private ListView lv;
     private SimpleAdapter adapter;
 

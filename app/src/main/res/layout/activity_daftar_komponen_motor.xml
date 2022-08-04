@@ -5,12 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".penjelasaninjektor">
+    android:background="@color/light_red">
 
     <ScrollView
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="60dp"
-        android:layout_below="@+id/relatif"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/scroll">
@@ -22,16 +19,98 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Injektor"
+                android:text="Komponen Motor"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30dp" />
+            <TextView
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
                 android:layout_gravity="left"
-                android:layout_marginLeft="15dp"
-                android:textSize="40dp" />
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="1. PGM-FI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/sistem_pgm_fi"/>
             <TextView
                 android:justificationMode="inter_word"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
                 android:textSize="20dp"
-                android:text="Secara sederhana, fungsi injektor menyemprotkan bahan bakar ke dalam ruang bakar dengan mengubah partikel menjadi kabut. Lubang kecil pada injektor tersebut yang mengubah bahan bakar menjadi kabut. Dengan proses pengkabutan bensin menjadi mudah terbakar di ruang bakar. Apakah injektor menyedot bensin dengan sendirinya? Tidak, bensin mengalir ke injektor akibat adanya tekanan dari fuel pump. Jadi tanpa fuel pump injektor tidak akan berfungsi dengan maksimal. Agar injektor tidak cepat rusak, dianjurkan jangan sampai mogok karena kehabisan bensin"
-                android:layout_width="290dp"
+                android:padding="30dp"
+                android:text="PGM-FI atau Programmed Fuel Injection adalah sistem injeksi bahan bakar elektronik digital yang diberikan oleh Honda untuk mesin pembakaran dalam yang memasok bahan bakar dan oksigen secara tepat sesuai kebutuhan mesin setiap keadaan."/>
+            <TextView
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="2. Busi"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/busi"/>
+            <TextView
+                android:justificationMode="inter_word"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="30dp"
+                android:text="Busi adalah sebuah suku cadang yang diletakkan pada pada bagian dalam dari mesin pembakaran dengan ujung electrode besi pada ruang bakar. Fungsi busi adalah bertugas untuk memercikkan bunga api yang dibutuhkan untuk membakar campuran udara dan bahan bakar yang telah dikompresi hingga menjadi langkah usah."/>
+            <TextView
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="3. Seher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/seher"/>
+            <TextView
+                android:justificationMode="inter_word"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="30dp"
+                android:text="Seher atau piston adalah sumbat geser yang terpasang di dalam sebuah silinder mesin pembakaran dalam silinder hidraulik, pneumatik, dan silinder pompa."/>
+            <TextView
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="4. CVT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cvt"/>
+            <TextView
+                android:justificationMode="inter_word"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="30dp"
+                android:text="CVT adalah kepanjangan dari Continuos Variable Transmission yaitu sistem perpindahan kecepatan secara penuh otomatis sesuai dengan putaran mesin, yah yang kita tahu, mesin ini tidak mempunyai gigi transmisi, tapi sebagai gantinya memakai dua buah pulley (depan dan belakang) yang dihubungkan dengan sabuk (v-belt)."/>
         </LinearLayout>
     </ScrollView>
 

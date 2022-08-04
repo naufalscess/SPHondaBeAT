@@ -19,7 +19,7 @@ import org.json.JSONObject;
 public class HasilDiagnosaActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
-    private static final String url = "http://192.168.233.132/sphonda/sp_honda/get_hasil_diagnosa.php";
+    private static final String url = "https://sphondabeat.retechnology.id/sphonda/sp_honda/get_hasil_diagnosa.php";
     private String hasil;
     private Button btn_kerusakan;
 
